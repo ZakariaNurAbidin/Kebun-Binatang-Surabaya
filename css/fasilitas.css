@@ -1,0 +1,106 @@
+.wrapper{
+    margin: 30px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 5px;
+    }
+    .box{
+        position: relative;
+        overflow: hidden;
+        padding: 10px;
+    }
+    .box img{
+        width: 100%;
+        border-radius: 20px;
+        display: block;
+        height: auto;
+    }
+    .info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+    border-radius: 20px;
+    width: 100%;
+    height: 0;
+    transition: height 0.5s ease;
+    }
+    .info p{
+    position: absolute;
+    left: 0;
+    right: 0;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: height 0.5s ease;
+    }
+    /* Hover */
+    .box:hover .info {
+    height: 100%;
+    }
+    .wrapper{
+        margin: 30px;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-gap: 5px;
+    }
+    body {
+            margin-top: 100px; /* Sesuaikan dengan tinggi header Anda */
+    }
+
+    .box{
+        position: relative;
+        overflow: hidden;
+        padding: 10px;
+    }
+    .box img{
+        width: 100%;
+        border-radius: 20px;
+        display: block;
+        height: auto;
+    }
+    .info{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to bottom, rgba(255,110,1,0.5), rgba(241,225,210,1));
+    border-radius: 20px;
+    width: 100%;
+    height: 0;
+    transition: height 0.5s ease;
+    }
+    .info p{
+    overflow: hidden;
+    padding-left: 5%;
+    padding-right: 5%;
+    }
+
+    .info h1{
+    overflow: hidden;
+    padding-top: 10%;
+    text-shadow: 1px 1px 2px var(--black);
+    }
+
+    /* Hover */
+    .box:hover .info {
+    height: 100%;
+    }
+    .box:hover .info p{
+    height: 100%;
+    }
+
+    .info {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    }

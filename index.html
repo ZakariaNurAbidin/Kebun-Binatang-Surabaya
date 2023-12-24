@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kebun Binatang Surabaya</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <!-- header -->
+
+    <header class="header">
+        <a href="#" class="logo"> <i class="fas fa-paw"></i> Kebun Binatang Surabaya</a>
+        <nav class="navbar">
+          <a href="index.html">Beranda</a>
+          <a href="animal.html">satwa</a>
+          <a href="denah.html">denah</a>
+          <a href="fasilitas.html">fasilitas</a>
+          <a href="about.html">Tentang</a>
+        </nav>
+        <div class="icons">
+          <div id="menu-btn" class="fas fa-bars"></div>
+        </div>
+        <div id="status-operasional"></div>
+      </header>
+    
+      <script>
+        function tampilkanStatusOperasional() {
+          var sekarang = new Date();
+          var jam = sekarang.getHours();
+    
+          var statusOperasional = "Tutup";
+          if (jam >= 8 && jam < 16) {
+            statusOperasional = "Buka";
+          }
+    
+          var pesanStatus = "Kebun Binatang Saat ini " + statusOperasional + "!";
+          document.getElementById("status-operasional").textContent = pesanStatus;
+        }
+    
+        tampilkanStatusOperasional(); // Panggil fungsi saat halaman dimuat
+    
+        // Memanggil tampilkanStatusOperasional() setiap 1 menit (60000 milidetik)
+        setInterval(tampilkanStatusOperasional, 60000);
+      </script>
+
+
+    <!-- end -->
+
+    <!-- home -->
+
+    
+
+    
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>Ragam hewan <br>
+            dari berbagai <br> belahan dunia</h3>
+            <a href="animal.html" class="btn">Jelajahi kebun binatang</a>
+        </div>
+
+        <img src="images/bottom_wave.png" alt="" class="wave">
+
+    </section>
+
+    <!-- end -->
+    <!-- about -->
+
+    <section class="about" id="about">
+
+        <h2 class="deco-title">About us</h2>
+
+        <div class="box-container">
+
+            <div class="image">
+                <img src="images/about.png" alt="">
+            </div>
+
+            <div class="content">
+                <h3 class="title">Kebun Binatang Surabaya</h3>
+                <p>Selamat Datang Di Kebun Binatang Surabaya, Rumah Bagi Lebih Dari 3.500 Hewan Dari 200 Spesies Yang Berbeda, Termasuk Satwa Langka Seperti Orangutan Sumatera, Badak Jawa, Dan Gajah Asia. Kami Adalah Salah Satu Kebun Binatang Terbesar Dan Tertua Di Indonesia, Dan Telah Menjadi Destinasi Populer Bagi Para Pengunjung Dari Seluruh Indonesia Dan Dunia. <br> <br>
+
+                    Kebun Binatang Surabaya Berkomitmen Untuk Memberikan Pengalaman Yang Tak Terlupakan Bagi Para Pengunjung, Sambil Memastikan Kesejahteraan Dan Kenyamanan Hewan-Hewan Yang Kami Pelihara. Selain Koleksi Hewan Yang Memukau, Kami Juga Menawarkan Berbagai Kegiatan Edukatif Dan Hiburan Yang Menarik, Seperti Pertunjukan Satwa, Tour Malam, Dan Safari Keliling Kebun Binatang. Kami Berharap Bahwa Kunjungan Anda Ke Kebun Binatang Surabaya Akan Memberikan Inspirasi Dan Meningkatkan Kesadaran Tentang Keanekaragaman Hayati Dan Pentingnya Menjaga Lingkungan Hidup Kita.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- end -->
+
+    <!-- animals -->
+
+    <section class="animal" id="animal">
+
+        <h2 class="heading">Satwa</h2>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="/animal/Mamalia/jerapah_.jpg" alt="">
+                <div class="content">
+                    <h3>Mamalia</h3>
+                    <a href="/mamalia.html" class="btn">lihat selengkapnya</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="/animal/aves/poksai_j_p.jpg" alt="">
+                <div class="content">
+                    <h3>Aves</h3>
+                    <a href="/aves.html" class="btn">lihat selengkapnya</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="/animal/aquarium.jpg" alt="">
+                <div class="content">
+                    <h3>Pisces</h3>
+                    <a href="/pisces.html" class="btn">lihat selengkapnya</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="animal/Reptil/buaya_i.jpg" alt="">
+                <div class="content">
+                    <h3>Reptil</h3>
+                    <a href="/reptile.html" class="btn">lihat selengkapnya</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- end -->
+
+    <!-- pricing -->
+
+    <section class="pricing" id="pricing">
+
+        <h2 class="heading">Harga</h2>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/pricing1.png" alt="">
+                <h3>Individu</h3>
+                <h4 class="price">Rp 15.000 / orang</h4>
+                <p>Dewasa dan anak-anak sama</p>
+                <label for="orangCount">Jumlah Orang:</label>
+                <input type="number" id="orangCount" min="0" value="0">
+                <br>
+                <button onclick="calculateTicketPrice()" class="btn">Hitung Biaya</button>
+                <p id="totalPrice">Total Biaya: Rp 0</p>
+            </div>
+
+            <div class="box">
+                <img src="images/pricing2.png" alt="">
+                <h3>Kelompok</h3>
+                <h4 class="price">Rp 13.000 / Orang</h4>
+                <p>Minimal 30 orang, free 1 orang berlaku kelipatan</p>
+                <label for="groupCount">Jumlah Orang:</label>
+                <input type="number" id="groupCount" min="0" value="0">
+                <br>
+                <button onclick="calculateGroupTicketPrice()" class="btn">Hitung Biaya</button>
+                <p id="groupTotalPrice">Total Biaya: Rp 0</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- end -->
+
+    <!-- contact -->
+
+    <section class="contact" id="contact">
+
+        <h2 class="heading">ketentuan</h2>
+
+        <div class="gambarkolom">
+            <div class="item">
+            <img src="images/ticket-svgrepo-com.svg" alt="" height="70px">
+            <p>Harga tiket masuk Rp. 15.000 Dewasa dan anak - anak sama. Berlaku setiap hari, anak dengan tinggi badan 85cm sudah dikenakan biaya normal</p>
+        </div>
+        <div class="item">
+            <img src="images/tickets-ticket-svgrepo-com.svg" alt="" height="70px">
+            <p>Harga tiket rombongan Rp 13.000 per orang, minimal 30 orang, free 1 orang berlaku kelipatan.
+                Tiket rombongan tidak berlaku di hari Sabtu, Minggu dan libur nasional</p>
+        </div>
+        <div class="item">
+            <img src="images/clock-svgrepo-com.svg" alt="" height="70px">
+            <p>Buka setiap hari dari pukul 08.00 - 16.00</p>
+        </div>
+        <div class="item">
+            <img src="images/coach-svgrepo-com.svg" alt="" height="70px">
+            <p>Menyediakan Educator</p>
+            <a href="https://api.whatsapp.com/send?phone=6285731435660&text=Mohon%20Infomasi%20lebih%20lengkap%20mengenai%20paket-paket%20tersebut">*Hubungi Marketing</a>
+        </div>
+        <div class="item">
+            <img src="images/mat-svgrepo-com.svg" alt="" height="70px">
+            <p>Tidak diijinkan membawa dan menggelar tikar di area Kebun Binatang Surabaya</p>
+        </div>
+        <div class="item">
+            <img src="images/no-smoking-svgrepo-com.svg" alt="" height="70px">
+            <p>Dilarang merokok di dalam area Kebun Binantang Surabaya</p>
+        </div>
+        <div class="item">
+            <img src="images/pandemic-covid19-newnormal-10-svgrepo-com.svg" alt="" height="70px">
+            <p>Wajib menggunakan masker</p>
+        </div>
+        <div class="item">
+            <img src="images/vaccine-svgrepo-com.svg" alt="" height="70px">
+            <p>Wajib vaksin minimal 1 dosis</p>
+        </div>
+        </div>    
+
+    </section>
+
+    <!-- end -->
+
+    <!-- footer -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3><i class="fas fa-paw"></i> Kebun Binatang Surabaya</h3>
+                <p>Tempat di mana kita dapat melihat berbagai jenis binatang dari berbagai belahan dunia.</p>
+                <p class="links"><i class="fas fa-clock"></i>Buka setiap hari</p>
+                <p class="days">8:00AM - 4:00PM</p>
+            </div>
+
+            <div class="box">
+                <h3>Hubungi kami</h3>
+                <a href="#" class="links"><i class="fas fa-phone"></i> (031) 5678703</a>
+                <a href="#" class="links"><i class="fas fa-envelope"></i> pdtskbs@gmail.com</a>
+                <a href="#" class="links"><i class="fas fa-map-marker-alt"></i> Surabaya, Jawa Timur</a>
+            </div>
+
+            <div class="box">
+                <h3>tautan langsung</h3>
+                <a href="index.html" class="links"> <i class="fas fa-arrow-right"></i>Beranda</a>
+                <a href="animal.html" class="links"> <i class="fas fa-arrow-right"></i>satwa</a>
+                <a href="denah.html" class="links"> <i class="fas fa-arrow-right"></i>denah</a>
+                <a href="fasilitas.html" class="links"> <i class="fas fa-arrow-right"></i>fasilitas</a>
+                <a href="about.html" class="links"> <i class="fas fa-arrow-right"></i>Tentang</a>
+            </div>
+        </div>
+
+        <!-- <div class="credit">&copy; 2022 zoolife. All rights reserved by <a href="#" class="link">ninjashub</a></div> -->
+
+    </section>
+
+    <!-- end -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

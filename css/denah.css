@@ -1,0 +1,87 @@
+.animal {
+    position: relative;
+}
+
+.animal li {
+    color: var(--white);
+    text-shadow: 1px 1px 2px var(--black);
+}
+
+.overlay {
+    position: absolute;
+    /* width: 100%; */
+}
+
+.overlay a img {
+    opacity: 0;
+}
+
+.overlay:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip {
+    position: absolute;
+    transform: translateX(-50%);
+    background: linear-gradient(to bottom, rgba(255,110,1,1), rgba(55,110,1,0.7));
+    border-radius: 20px;
+    color: #fff;
+    padding: 10px;
+    font-size: 14px;
+    width: 350px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s;
+    display: flex; /* Menggunakan Flexbox */
+    align-items: center; /* Pusatkan vertikal */
+    border: 2px solid white;
+}
+
+.tooltip .animal-image {
+    flex: 0 0 100px; /* Lebar gambar hewan */
+    margin-right: 10px;
+}
+
+.tooltip .animal-image img{
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+.tooltip .animal-info {
+    flex: 1; /* Mengambil sisa ruang */
+}
+
+.tooltip h3 {
+    margin-top: 0; /* Hapus margin atas */
+}
+
+.tooltip ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tooltip ul li {
+    margin-bottom: 5px;
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    padding: 5px 0;
+    color: #ff6e01;
+    font-size: 20px;
+}
