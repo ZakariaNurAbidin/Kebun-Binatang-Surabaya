@@ -1,5 +1,5 @@
 # Website Kebun Binatang Surabaya
-Kelompok 3 :
+Para pengembang :
 1. Aderio Rendy Harenza (21051214006)
 2. Sultan Choirullah Rafi A (21051214010)
 3. Arkan Mahardika (21051214020)
